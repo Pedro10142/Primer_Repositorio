@@ -1,13 +1,14 @@
 
 class Arreglo:
-    def __init__(self, elementos):
-        self.elementos = elementos
+    def __init__(self):
+        self.lista = []
 
     def mostrar(self):
-        return self.elementos
+        print(self.lista)
     
-    def insertar(self, elemento):
-        self.elementos.append(elemento)
+    def insertar(self):
+        elemento = int(input("inserta el numero"))
+        self.lista.append(elemento)
    
     def eliminar(self, elemento):
         self.elementos.remove(elemento)
@@ -15,17 +16,6 @@ class Arreglo:
     def modificar(self, i, elemento):
         self.elementos[i] = elemento
 
-arreglo1 = Arreglo([1, 20, 30, 40])
-
-while True:
-    nuevo_elemento = input("Ingrese un nuevo elemento para insertar en la lista (o 'salir' para terminar): ")
-    if nuevo_elemento.lower() == 'salir':
-        break
-    else:
-        try:
-            elemento = int(nuevo_elemento)
-            arreglo1.insertar(elemento)
-        except ValueError:
-            print("Por favor, ingrese un número válido.")
-
-print(arreglo1.mostrar())
+lista = Arreglo()
+lista.mostrar()
+lista.insertar
