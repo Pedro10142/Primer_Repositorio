@@ -18,3 +18,25 @@ hijo2 = hijo2()
 
 print("hijo1 ", hijo1.rasgos())
 print("hijo2 ", hijo2.rasgos())
+
+
+
+
+
+
+class Animal:
+    def __init__(self, nombre, raza):
+        self.nombre = nombre
+        self.raza = raza
+    
+    def hacer_sonido(self):
+        return "sonido generico"
+    
+class perro(Animal):
+    def hacer_sonido(self):
+        return "guau guau"
+
+perrito = perro("Pancho", "Chihuahua") # instancia
+print(perrito.nombre)
+print(perrito.raza)
+print(perrito.hacer_sonido())

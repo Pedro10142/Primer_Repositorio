@@ -16,5 +16,5 @@ def escuchar_animal(animal: Animal):
 mi_perro = Perro()
 mi_gato = Gato()
 
-escuchar_animal(mi_perro) 
-escuchar_animal(mi_gato)
+print(escuchar_animal(mi_perro))
+print(escuchar_animal(mi_gato))
