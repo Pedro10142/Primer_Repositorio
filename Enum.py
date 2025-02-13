@@ -1,11 +1,20 @@
 from enum import Enum
-class Consecutivo(Enum):
+class Dias(Enum):
     lunes = 1
     martes = 2
     miercoles = 3
 
-print(Consecutivo.lunes)
-print(Consecutivo.lunes.value)
+horas_en_dia = {
+    Dias.lunes: 12,
+    Dias.martes: 10,
+    Dias.miercoles: 19
+}
 
-print(type(Consecutivo.lunes))
-print(type(Consecutivo.lunes.value))
+print(Dias.lunes)
+print(Dias.lunes.value)
+
+print(type(Dias.lunes))
+print(type(Dias.lunes.value))
+
+for dia in Dias:
+    print(f'{dia.name} tiene {horas_en_dia[dia]} horas')
