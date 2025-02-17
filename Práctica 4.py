@@ -1,4 +1,10 @@
 from enum import Enum
+from typing import Final
+
+class Usuario:
+    max_Usuario: Final = 1000
+
+    
 class Dias(Enum):
     lunes = 1
     martes = 2
